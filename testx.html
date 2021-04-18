@@ -1,0 +1,78 @@
+<!-- Number Guessing Game HTML -->
+<html>
+
+<head>
+    <title>JavaScript Number Guess</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no">
+    <!-- TODO let the user submit a guess by pressing return -->
+    <!-- TODO hide and show history area as needed -->
+    <style>
+        /* Number Guessing Game CSS */
+
+        body {
+            margin: 10px;
+            background-color: #cccccc;
+            font-family: Arial, sans-serif;
+        }
+
+        .button {
+            margin-top: 10px;
+            border-radius: 10px;
+            border-color: #000000;
+            border-style: solid;
+            border-width: 1px;
+            width: 20%;
+            padding: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #historyArea {
+            margin-top: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        #game {
+            background-color: #ffffff;
+            border-radius: 10px;
+            border-style: solid;
+            border-width: 3px;
+            border-color: #cccccc;
+            padding: 10px;
+        }
+
+        #statusArea {
+            font-size: 120%;
+        }
+
+        #footerArea {
+            text-align: center;
+            margin-top: 5px;
+            font-size: 90%;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="game">
+        <h1 id="title">Number Guessing Game</h1>
+        <div id="statusArea">
+            <p>Enter a number between 1-100 and click the button...</p>
+        </div>
+        <input type="number" id="userGuess" />
+        <button id="buttonArea" class="button" onclick="checkGuess()">
+            Guess
+        </button>
+        <div id="historyArea">
+            <h2 class="test">Your Previous Guesses</h2>
+            <ol id="historyList">
+            </ol>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
